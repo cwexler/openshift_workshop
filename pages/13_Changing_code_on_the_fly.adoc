@@ -19,7 +19,7 @@ repository to your workstation.
 https://github.com/VeerMuchandi/nodejs-hello using the command:
 
 ----
-$ git clone https://github.com/jimgarrett123/nodejs-hello.git
+$ git clone https://github.com/cwexler/nodejs-hello.git
 ----
 
 This is a very simple nodejs application. Feel free to understand the
@@ -75,11 +75,11 @@ Wait for the build to complete and test the application:
 ----
 $ oc get route
 NAME           HOST/PORT                                                                       PATH      SERVICES       PORT       TERMINATION
-nodejs-hello   http://nodejs-hello-jimgarrett.apps.rhpds.openshift.opentlc.com/             nodejs-hello   8080-tcp
+nodejs-hello   http://nodejs-hello-xxxxxx.apps.rhpds.openshift.opentlc.com/             nodejs-hello   8080-tcp
 ----
 
 ----
-$ curl http://nodejs-hello-jimgarrett.apps.rhpds.openshift.opentlc.com/
+$ curl http://nodejs-hello-xxxxxxx.apps.rhpds.openshift.opentlc.com/
 Welcome to OpenShift!! My HostName is: nodejs-hello-1-8qigc
 ----
 
