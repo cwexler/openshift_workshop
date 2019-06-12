@@ -69,7 +69,7 @@ Click on the following link and use the directions provided to install GIT on yo
 
 link:https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git^]
 
-NOTE: Window users should invoke 'git bash'
+NOTE: Window users should use 'git bash' instead command prompts
 
 
 
