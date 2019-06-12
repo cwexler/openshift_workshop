@@ -23,7 +23,7 @@ $ oc get projects
 ....
 
 If you have more than one project, you can switch to a different one by
-issuing `oc project <project name>`. Although you don’t want to do it
+issuing `oc project <project name>`. Although you donâ€™t want to do it
 now.
 
 You can also check the status of the project by running the following
@@ -120,7 +120,7 @@ route "welcome" exposed
 
 $ oc get route
 NAME      HOST/PORT                                             PATH      SERVICES   PORT       TERMINATION   WILDCARD
-welcome   welcome-jimgarrett.apps.rhpds.openshift.opentlc.com             welcome    8080-tcp                 None
+welcome   <welcome-'different for everyone'>                              welcome    8080-tcp                 None
 ....
 
 *Step 4: Try your application*
@@ -129,8 +129,14 @@ Access the application: Now access the application using curl (looking
 for 200 status code) or from the browser and see the result
 
 ....
-$ curl -Is http://welcome-jimgarrett.apps.rhpds.openshift.opentlc.com
+$ curl -Is http://<WHAT WAS DISPLAYED ABOVE>
 ....
+HTTP/1.1 200 OK
+Date: Wed, 12 Jun 2019 15:10:10 GMT
+Server: Apache/2.4.18 (Red Hat)
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: 7c65e929bf9956c3d182ec7d294c4166=7ab626f01134ca1633c1043bbe83b330; path=/; HttpOnly
+Cache-control: private
 
 Voila!! you created your first application using an existing docker
 image on OpenShift.
